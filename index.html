@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <title>LVmediamarketing</title>
+    <link rel="stylesheet" href="style.css1.css" />
+
+    <script src="lvmedia.js"></script>
+  </head>
+  <body>
+    <header>
+      <img src="images/Lv-logo.jpg" alt="" class="logo" />
+      <div class="topnav">
+        <ul class="navbar">
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="first-page-content">
+      <div class="first-page-text">
+        <h2>
+          We are your go to marketing team to help you scale your business
+        </h2>
+        <a href="registration.html"><button>Get Started</button></a>
+      </div>
+      <div class="first-page-image">
+        <img src="images/hero-img.png" alt="" />
+      </div>
+    </div>
+    <section class="second-page-content">
+      <div class="second-page-text">
+        <h2>Interesting Facts About Online Marketing</h2>
+        <ul>
+          <li>The annual growth for the digital marketing industry is expected to be 9% year on year.</li>
+          <li>Nearly two-thirds of businesses have increased their digital marketing budgets since 2021.</li>
+          <li>A consumer's search activity rises by 155% after seeing a display advert.</li>
+          <li>Consumers are 70% more likely to purchase after seeing a retargeting advert.</li>
+        </ul>
+      </div>
+      <div class="second-page-image">
+        <img src="Webimage1.jpg" alt="Interesting Facts" />
+      </div>
+    </section>
+    
+    <section class="services-content">
+      <h2 id="services" class="services-header">Our Services</h2>
+
+      <div class="services-grid">
+        <div class="service-box">
+          <h4>Social Media Advertising</h4>
+          <p>We can run ads on any social media platform you choose while also giving you a detailed marketing strategy.</p>
+        </div>
+        <div class="service-box">
+          <h4>Project Management</h4>
+          <p>Each client will have a dedicated project manager who oversees daily operations and serves as the main point of contact.</p>
+        </div>
+        <div class="service-box">
+          <h4>Email Marketing</h4>
+          <p>Send over 2000 emails per day to advertise your products through targeted email marketing campaigns.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section>
+      <div class="quote">
+        <h3>
+          <i
+            >“Stopping advertising to save money is like stopping your watch to
+            save time.”</i
+          >
+          <p>Henry Ford</p>
+        </h3>
+      </div>
+    </section>
+   
+    <section>
+      <div class="contact-d">
+        <h2 class="contact-page">Contact Us</h2>
+        <form action="/submit_contact_form" method="post" id="contact">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required />
+          <br />
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required />
+          <br />
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" required />
+          <br />
+          <label for="description">Description:</label>
+          <textarea id="description" name="description" required></textarea>
+          <br />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
+
+    <p class="footer">&copy ; 2025 LVmediamarketing - All rights reserved.</p>
+
+    <script>
+      const contactButton = document.getElementById("contact-button");
+      const contactPage = document.querySelector(".contact-page");
+
+      contactButton.addEventListener("click", () => {
+        contactPage.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest",
+        });
+      });
+    </script>
+  </body>
+</html>
